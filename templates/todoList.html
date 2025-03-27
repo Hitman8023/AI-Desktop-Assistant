@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html> 
+<head>
+<title>Reminder App</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif; 
+            background-color: #eaeaea;
+        }
+        .container {
+                max-width: 500px; margin: auto;
+                background-color:#fff;
+                padding: 1px 20px 20px 20px; border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+        
+            label,
+            input,
+            button {
+                margin: 10px 0;
+                box-sizing: border-box;
+            }
+        
+            input {
+                width: 100%;
+                margin-top: 5px;
+            }
+        
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: center;
+            }
+        
+            th,
+            td {
+                padding: 5px;
+                border: 1px solid #ddd;
+                text-align: center;
+            }
+            
+            
+            body {
+        font-family: "Arial", sans-serif; 
+        background: linear-gradient(135deg, #f7f7f7 0%, #e0e0e0 100%);
+        margin: 0;
+        padding: 0;
+        }
+        
+        .container {
+        max-width: 600px; 
+        margin: 50px auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+        from {
+        opacity: 0;
+        transform: translateY(-20px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }
+        
+        h2 {
+        text-align: center;
+        color: #333;
+        animation: slideIn 1s ease-in-out;
+        }
+        
+        @keyframes slideIn {
+        from {
+        opacity: 0;
+        transform: translateY(-50px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }
+        
+        label {
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+        animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+        width: calc(100% - 22px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        animation: slideIn 1s ease-in-out;
+        }
+        
+        input[type="date"],
+        input[type="time"] {
+        width: calc(50% - 11px);
+        }
+        
+        button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #1b1d1b;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        animation: fadeIn 1s ease-in-out;
+        }
+        
+        button:hover {
+        background-color: #515251;
+        }
+        
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        }
+        
+        th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        }
+        
+        th {
+        background-color: #202120;
+        color: #fff;
+        }
+        
+        tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+        }
+        
+        tbody tr:hover {
+        background-color: #ddd;
+        }
+        
+        @keyframes fadeIn {
+        from {
+        opacity: 0;
+        }
+        to {
+        opacity: 1;
+        }
+        }
+        body {
+            font-family: "Arial", sans-serif; 
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .container {
+            max-width: 500px; 
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 24px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        input[type="date"],
+        input[type="time"] {
+            width: calc(50% - 11px);
+        }
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #000000;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #414241;
+            color: #fff;
+        }
+        
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tbody tr:hover {
+            background-color: #ddd;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity:1;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center">Reminder App</h2>
+
+        <label for="">Title</label>
+        <input type="text" id="title"/>
+        <label for="">Description: </label>
+        <input type="text" id="description"/>
+        <label for="">Date : </label>
+        <input type="date" id="date"/>
+        <label for="">Time : </label> 
+        <input type="time" id="time"/>
+
+        <button style="width: 100%" id="submit"> 
+            Schedule Reminder
+        </button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Date & Time</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="reminderTableBody"></tbody>
+        </table>
+    </div>
+
+
+    <script>
+        const submit = document.getElementById("submit");
+
+        if ("Notification" in window) {
+            if (Notification.permission === "granted") {
+                // Notifications are allowed
+            } else if (Notification.permission !== 'denied') {
+                Notification.requestPermission().then(function (permission) {
+                    if (permission === "granted") {
+                        // Notifications are allowed
+                    } else {
+                        // This is the case where the permission is not yet granted
+                        alert("Please allow notification access!");
+                    }
+                });
+            }
+        }
+        var timeoutIds = [];
+        
+        submit.addEventListener("click", function () {
+            var title = document.getElementById("title").value;
+            var description = document.getElementById("description").value;
+            var date = document.getElementById("date").value;
+            var time = document.getElementById("time").value;
+        
+            var dateTimeString = date + " " + time;
+            var scheduledTime = new Date(dateTimeString);
+            var currentTime = new Date();
+            var timeDifference = scheduledTime - currentTime;
+        
+            if (timeDifference > 0) {
+                addReminder(title, description, dateTimeString);
+        
+                var timeoutId = setTimeout(function () {
+                    var notification = new Notification(title, {
+                        body: description,
+                        requireInteraction: true,
+                    });
+                },
+                    timeDifference
+                );
+        
+                timeoutIds.push(timeoutId);
+            } else {
+                alert("The scheduled time is in the past!");
+            }
+        });
+        
+        function addReminder(title, description, dateTimeString) {
+            var tableBody = document.getElementById("reminderTableBody");
+        
+            var row = tableBody.insertRow();
+        
+            var titleCell = row.insertCell(0);
+            var descriptionCell = row.insertCell(1);
+            var dateTimeCell = row.insertCell(2);
+            var actionCell = row.insertCell(3);
+        
+            titleCell.innerHTML = title;
+            descriptionCell.innerHTML = description;
+            dateTimeCell.innerHTML = dateTimeString;
+            actionCell.innerHTML = '<button onclick="deleteReminder(this);">Delete</button>';
+        }
+        
+        function deleteReminder(button) {
+            var row = button.closest("tr");
+            var index = row.rowIndex;
+            clearTimeout(timeoutIds[index - 1]);
+            timeoutIds.splice(index - 1, 1);
+            row.remove();
+        }
+    </script>
+
+</body>
+</html>
